@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpg" href="imgs/faviocn.jpg">
+<title>Tours And Travels</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/fontawesome.min.css">
+<link rel="stylesheet" href="css/sliderstyles.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
+
+</head>
+<body>
+	<header id="home">
+		<nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="imgs/logo.png"
+					alt="#" /></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#show-menu" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="show-menu">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="#home">Home
+								<span class="sr-only">(current)</span>
+						</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about">about</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#service">Service</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#agency">travel
+								agency</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact">contact
+								us</a></li>
+						<li class="nav-item .search-container"><a
+							class="nav-link search" href="#"><i class="fas fa-search"></i></a>
+							<form>
+								<input type="search">
+							</form></li>
+						<li class="nav-item"><a class="nav-link" href="#"
+							title="Registration"><i class="far fa-user"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="#"
+							title="sign In"><i class="fas fa-sign-in-alt"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="#"
+							title="sign Out"><i class="fas fa-sign-out-alt"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- bradcam_area  -->
+    <div class="bradcam_area " style="background-image: url('imgs/pic3.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>Page Title</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+	<footer>
+		<div class="container">
+			<ul>
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+			</ul>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="item">
+						<h4 class="text-uppercase">Contact us</h4>
+						<p class="address">
+							123 Second Street Fifth <br> Avenue,<br> Manhattan, New
+							York<br> +987 654 3210
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="item">
+						<h4 class="text-uppercase">additional links</h4>
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Terms and conditions</a></li>
+							<li><a href="#">Privacy policy</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="item date">
+						<h4 class="text-uppercase">resent posts</h4>
+						<p>
+							<a href="#">01/03/2019</a>
+						</p>
+						<p>
+							<a href="#">08/05/2019</a>
+						</p>
+						<p>
+							<a href="#">01/03/2019</a>
+						</p>
+						<p>
+							<a href="#">08/05/2019</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="item">
+						<h4 class="text-uppercase">newsletter</h4>
+						<form>
+							<input type="text" placeholder="Name"> <input
+								type="email" placeholder="Email"> <input type="submit"
+								value="Submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright text-center">
+			<p>
+				Copyright 2020 Design by <a href="https://html.design">Shashank
+				</a>
+			</p>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+
+			'use strict';
+			$('.navbar ul li a.search').click(function(e) {
+				e.preventDefault();
+			});
+			$('.navbar a.search').click(function() {
+				$('.navbar form').fadeToggle();
+			});
+
+			$('.navbar ul.navbar-nav li a').click(function(e) {
+
+				var getAttr = $(this).attr('href');
+
+				e.preventDefault();
+				$('html').animate({
+					scrollTop : $(getAttr).offset().top
+				}, 1000);
+			});
+		})
+	</script>
+	<!-- FlexSlider -->
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.flexslider').flexslider({
+				animation : "fade"
+			});
+
+			$(function() {
+				$('.show_menu').click(function() {
+					$('.menu').fadeIn();
+					$('.show_menu').fadeOut();
+					$('.hide_menu').fadeIn();
+				});
+				$('.hide_menu').click(function() {
+					$('.menu').fadeOut();
+					$('.show_menu').fadeIn();
+					$('.hide_menu').fadeOut();
+				});
+			});
+		});
+	</script>
+</body>
+</html>

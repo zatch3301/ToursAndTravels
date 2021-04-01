@@ -1,0 +1,112 @@
+@charset "ISO-8859-1";
+/* Universal Selector  */
+/* *{ */
+/* 	margin: 0px; define outside space of element */
+/* 	padding:0px; define inside space of element */
+/* 	color: aliceblue; */
+/* } */
+/* body{ */
+/* 	background: linear-gradient(-45deg, #7873f5, #ec77ab, #537895, #09203f);	 */
+/* 	background-size: 400% 400%; 	 */
+/* 	animation: gradient 15s ease infinite; */
+/* } */
+
+
+/* .formDiv{ */
+/* 	border:2px solid #ff80ff;  width style color */
+/* 	width:400px; */
+/* 	margin: 50px auto; 		margin need for values  top right bottom left */
+/* 							 margin top-bottom  left-right */
+/* 	padding: 10px;          padding value are same as margin  */
+/* /* 	background: #00000073; */ */
+/*     border-radius: 10px; */
+/* } */
+/* legend{ */
+/* 	font-variant: no-contextual; */
+/* 	font-size: 18px; */
+/* 	color: #61ffe9; */
+/* 	margin-left: 30%; */
+/* 	font-family: Arial, Helvetica, sans-serif; */
+/* } */
+/* table{ */
+/* 	width: 100%; */
+/* } */
+/* td */
+/* { */
+/* 	padding: 5px; */
+/* } */
+/* strong */
+/* { */
+/* 	margin-left: 20px; */
+/* 	color: azure; */
+/* } */
+/* input,textarea,select */
+/* { */
+/* 	height: 30px; */
+/* 	width: 180px; */
+/* 	border-radius: 3px; */
+/* 	padding-left: 5px; */
+/* 	color: #fff; */
+/* 	background: center; */
+/* } */
+/* textarea { */
+/* 	height: 50px; */
+/* } */
+/* input[type=submit] */
+/* { */
+/* 	width: 100px; */
+/* 	padding: 2px; */
+/* 	font-weight: bold; */
+/* 	border:2px solid #21685b; */
+/* 	color: #fbfbfb; */
+/* 	background-color: #21685b; */
+/*  	margin-right: 20%;  */
+/* } */
+/* input[type=reset]  */
+/* { */
+/* 	width: 100px; */
+/* 	padding: 2px; */
+/* 	font-weight: bold; */
+/* 	border:2px solid red; */
+/* 	color: #fbfbfb; */
+/* 	background-color: #ff2626; */
+/* /* 	margin-right: 20%; */ */
+/* } */
+/* select */
+/* { */
+/* 	padding-left:15px; */
+/* 	font-size: 18px; */
+/* 	font-variant: small-caps; */
+/* 	color: mediumaquamarine; */
+/*     background-color: black; */
+/* } */
+
+.success{
+	font-size: small;
+	font-style: italic;
+	color: #00ff00;
+}
+
+.error{
+	font-size: small;
+	font-style: italic;
+	color: #ff0000;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
